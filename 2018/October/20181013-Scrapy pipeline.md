@@ -12,9 +12,9 @@
         - [为什么要用pipeline？](#为什么要用pipeline)
     - [How](#how)
         - [如何使用pipelline？](#如何使用pipelline)
-    - [如何在pipeline中对请求进行去重?](#如何在pipeline中对请求进行去重)
-        - [原本错误的做法:](#原本错误的做法)
-        - [我的做法:](#我的做法)
+        - [如何在pipeline中对请求进行去重?](#如何在pipeline中对请求进行去重)
+            - [原本错误的做法:](#原本错误的做法)
+            - [我的做法:](#我的做法)
     - [如何在函数中指定pipeline？](#如何在函数中指定pipeline)
     - [When&Where&Who](#whenwherewho)
     - [History:](#history)
@@ -68,9 +68,9 @@
 ### 如何使用pipelline？
 
 
-## 如何在pipeline中对请求进行去重?
+### 如何在pipeline中对请求进行去重?
 
-### 原本错误的做法:
+#### 原本错误的做法:
 
 ```
 class SubjectIdPipeline(object):
@@ -100,7 +100,7 @@ class SubjectIdPipeline(object):
 
 从流程图可以看到
 
-### 我的做法:
+#### 我的做法:
 
 ```
 if not douban_books_db.checkSubjectIdExists(subject_id):  # 如果没爬过该图书元

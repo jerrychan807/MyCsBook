@@ -4,31 +4,30 @@
 
 - [Scrapy Setting](#scrapy-setting)
 - [Preface:](#preface)
-- [Keyword : Scrapy Setting](#keyword--scrapy-setting)
-    - [What](#what)
-        - [什么是Scrapy Setting?](#什么是scrapy-setting)
-        - [实现方式？](#实现方式)
-        - [Setting的设定机制分哪些？](#setting的设定机制分哪些)
-    - [Why](#why)
+- [What](#what)
+    - [什么是Scrapy Setting?](#什么是scrapy-setting)
+    - [Scrapy Setting的实现方式？](#scrapy-setting的实现方式)
+    - [Setting的设定机制分哪些？](#setting的设定机制分哪些)
+- [Why](#why)
     - [为什么Scrapy Setting那么复杂？](#为什么scrapy-setting那么复杂)
-        - [为什么要合理设置Setting?](#为什么要合理设置setting)
-    - [How](#how)
-        - [How to access settings?](#how-to-access-settings)
-    - [When&Where&Who](#whenwherewho)
-    - [History:](#history)
-    - [ADEPT:](#adept)
-        - [Analogy 类比：这个概念像是什么已知的东西？](#analogy-类比这个概念像是什么已知的东西)
-        - [Diagram 可视化：把这个概念画出来是什么样子？](#diagram-可视化把这个概念画出来是什么样子)
-        - [Example 实例：有什么身边的案例？](#example-实例有什么身边的案例)
-        - [Plain English 大白话讲解：如何向一个小孩讲解这个概念？](#plain-english-大白话讲解如何向一个小孩讲解这个概念)
-        - [Technical Definition：真正专业的定义和描述是什么样的？](#technical-definition真正专业的定义和描述是什么样的)
-    - [Principle:](#principle)
-        - [它的本质是什么？](#它的本质是什么)
-        - [它的第一原则是什么？](#它的第一原则是什么)
-        - [它的知识结构是怎样的?](#它的知识结构是怎样的)
-    - [Expansion](#expansion)
-    - [Inspire](#inspire)
-    - [Refs：](#refs)
+    - [为什么要合理设置Setting?](#为什么要合理设置setting)
+- [How](#how)
+    - [How to access settings?](#how-to-access-settings)
+- [When&Where&Who](#whenwherewho)
+- [History:](#history)
+- [ADEPT:](#adept)
+    - [Analogy 类比：这个概念像是什么已知的东西？](#analogy-类比这个概念像是什么已知的东西)
+    - [Diagram 可视化：把这个概念画出来是什么样子？](#diagram-可视化把这个概念画出来是什么样子)
+    - [Example 实例：有什么身边的案例？](#example-实例有什么身边的案例)
+    - [Plain English 大白话讲解：如何向一个小孩讲解这个概念？](#plain-english-大白话讲解如何向一个小孩讲解这个概念)
+    - [Technical Definition：真正专业的定义和描述是什么样的？](#technical-definition真正专业的定义和描述是什么样的)
+- [Principle:](#principle)
+    - [它的本质是什么？](#它的本质是什么)
+    - [它的第一原则是什么？](#它的第一原则是什么)
+    - [它的知识结构是怎样的?](#它的知识结构是怎样的)
+- [Expansion](#expansion)
+- [Inspire](#inspire)
+- [Refs：](#refs)
 
 <!-- /TOC -->
 
@@ -43,22 +42,20 @@
 
 ---
 
-# Keyword : Scrapy Setting
+# What
 
-## What
-
-### 什么是Scrapy Setting?
+## 什么是Scrapy Setting?
 
 简言之,就是Scrapy框架的配置模块
 
-### 实现方式？
+## Scrapy Setting的实现方式？
 The infrastructure of the settings provides **a global namespace of key-value mappings** that the code can use to pull configuration values from. 
 The settings can be populated through different mechanisms,
 
 从不同的设定机制里,根据优先级，生成一个由许多键值对组成的**全局的命名空间**。
 
 
-### Setting的设定机制分哪些？
+## Setting的设定机制分哪些？
 
 Scrapy Setting由五部分构成，根据优先级可分类
 
@@ -74,7 +71,7 @@ Scrapy Setting由五部分构成，根据优先级可分类
 
 ---
 
-## Why
+# Why
 
 ## 为什么Scrapy Setting那么复杂？
 
@@ -94,7 +91,7 @@ Scrapy的组件就有很多，是一整个爬虫框架，为了能够**高度定
 
 > 一开始还以为每写一个新的爬虫就要开一个新的文件夹，其实不然，如果你要做一个新闻类的爬虫的话，完全可以全部放在一个文件夹里。每个不同的网站就是一个spider,然后可以分别定制settings就好了。
 
-### 为什么要合理设置Setting?
+## 为什么要合理设置Setting?
 
 这个可以从多个维度来回答。
 
@@ -118,9 +115,9 @@ Scrapy的组件就有很多，是一整个爬虫框架，为了能够**高度定
 
 ---
 
-## How
+# How
 
-### How to access settings?
+## How to access settings?
 
 两种方式：
 
@@ -146,23 +143,23 @@ The settings object can be used like a dict (e.g., `settings['LOG_ENABLED'])`, b
 
 ---
 
-## When&Where&Who
+# When&Where&Who
 
 
 ---
 
-## History:
+# History:
 
 
 ---
 
-## ADEPT:
+# ADEPT:
 
-### Analogy 类比：这个概念像是什么已知的东西？
-### Diagram 可视化：把这个概念画出来是什么样子？
-### Example 实例：有什么身边的案例？
-### Plain English 大白话讲解：如何向一个小孩讲解这个概念？
-### Technical Definition：真正专业的定义和描述是什么样的？
+## Analogy 类比：这个概念像是什么已知的东西？
+## Diagram 可视化：把这个概念画出来是什么样子？
+## Example 实例：有什么身边的案例？
+## Plain English 大白话讲解：如何向一个小孩讲解这个概念？
+## Technical Definition：真正专业的定义和描述是什么样的？
 
 The Scrapy settings allows you to customize the behaviour of all Scrapy components, including the core, extensions, pipelines and spiders themselves.
 
@@ -172,31 +169,31 @@ The settings are also the mechanism for selecting the currently active Scrapy pr
 
 ---
 
-## Principle:
+# Principle:
 
-### 它的本质是什么？
+## 它的本质是什么？
 
 **a global namespace of key-value mappings**
 
 
-### 它的第一原则是什么？
+## 它的第一原则是什么？
 
-### 它的知识结构是怎样的?
-
-
----
-
-## Expansion
+## 它的知识结构是怎样的?
 
 
 ---
 
-## Inspire
+# Expansion
+
+
+---
+
+# Inspire
 
 
 ----
 
-## Refs：
+# Refs：
 
 ---
 
