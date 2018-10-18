@@ -195,6 +195,8 @@ The settings are also the mechanism for selecting the currently active Scrapy pr
 
 # Refs：
 
+- [Scrapy官方文档](https://doc.scrapy.org/en/latest/topics/settings.html#topics-settings-ref)
+
 ---
 
 
