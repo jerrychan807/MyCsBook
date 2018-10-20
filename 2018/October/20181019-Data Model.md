@@ -11,7 +11,6 @@
     - [interpreter & DataModel 的关系?](#interpreter--datamodel-的关系)
 - [Why](#why)
     - [为什么要了解Data Model?](#为什么要了解data-model)
-    - [修改Special method 有什么好处？](#修改special-method-有什么好处)
 - [How](#how)
     - [Special Method被调用的方式？](#special-method被调用的方式)
 - [When&Where&Who](#whenwherewho)
@@ -39,7 +38,7 @@
 
 最近在看《fluent python》
 
-need to clear python **Data Model**这个concept。
+need to clear python **Data Model** 这个concept。
 
 ---
 
@@ -47,7 +46,9 @@ need to clear python **Data Model**这个concept。
 
 ## 什么是Data Model?
 
-data model as a description of Python as a framework. It formalizes the interfaces of the building blocks of the language itself, such as sequences, iterators, functions, classes, context managers, and so on
+Data model as a **description** of Python as a framework. 
+
+It formalizes the interfaces of the building blocks of the language itself, such as sequences, iterators, functions, classes, context managers, and so on
 
 
 ## Data Model与Python的关系？
@@ -88,18 +89,7 @@ interpreter看到双下划线就能解析。
 
 了解Data Model，才能够自己去修改很多`Special method`
 
-## 修改Special method 有什么好处？
 
-The **special method** names allow **your objects** to implement, support, and interact with **basic language constructs** such as:
-
-- Iteration
-- Collections
-- Attribute access
-- Operator overloading
-- Function and method invocation
-- Object creation and destruction
-- String representation and formatting
-- Managed contexts (i.e., with blocks)
 
 ---
 
@@ -116,19 +106,11 @@ The **special method** names allow **your objects** to implement, support, and i
 For example, the statement `for i in x`: actually causes the invocation of `iter(x)`, which in turn may call `x.__iter__()` if that is available.
 
 
-
-
 ---
 
 # When&Where&Who
 
-## Special Method一般被谁调用?
 
-> `special methods` is that they are meant to be called by `the Python interpreter`, and not by you.
-
-> You write `len(my_object)` and, if my_object is an instance of a user-defined class, then Python calls the `__len__` instance method you implemented
-
-由interpreter调用，一般不用用户自己调用。
 
 
 
