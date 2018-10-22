@@ -14,7 +14,6 @@
 - [How](#how)
     - [Special Method被调用的方式？](#special-method被调用的方式)
 - [When&Where&Who](#whenwherewho)
-    - [Special Method一般被谁调用?](#special-method一般被谁调用)
 - [History:](#history)
 - [ADEPT:](#adept)
     - [Analogy 类比：这个概念像是什么已知的东西？](#analogy-类比这个概念像是什么已知的东西)
@@ -160,6 +159,10 @@ For example, the statement `for i in x`: actually causes the invocation of `iter
 
 - 《fluent python》
 - [python3 Data model](https://docs.python.org/3/reference/datamodel.html)
+- [10-data_model.pptx](https://courses.cs.washington.edu/courses/cse140/12su/lectures/10-data_model.pdf)
+- [Python OOP Tutorial 5: Special (Magic/Dunder) Methods](https://www.youtube.com/watch?v=3ohzBxoFHAY)
+- [Intro to the Python Data Model and Pythonic Programming](https://www.youtube.com/watch?v=GrwV2hi4XHg)
+- [The Python Datamodel: When and how to write objects](https://www.youtube.com/watch?v=iGfggZqXmB0)
 
 ---
 
