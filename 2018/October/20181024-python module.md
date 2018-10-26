@@ -11,7 +11,6 @@
     - [Module的功能角色?](#module的功能角色)
 - [Why](#why)
     - [为什么需要Module?](#为什么需要module)
-    - [为什么使用Module?](#为什么使用module)
 - [How](#how)
     - [如何从Module到一个project/program?](#如何从module到一个projectprogram)
         - [`top-level file`:](#top-level-file)
@@ -19,6 +18,12 @@
         - [`import`->`access`](#import-access)
         - [示例：](#示例)
         - [`object.attribute`](#objectattribute)
+    - [Import 是如何工作的？](#import-是如何工作的)
+        - [Import 的三个步骤?](#import-的三个步骤)
+        - [每次Import都要走这三个步骤吗？](#每次import都要走这三个步骤吗)
+        - [Step1.搜索](#step1搜索)
+        - [Step2.编译(Maybe)](#step2编译maybe)
+        - [Step3.运行](#step3运行)
 - [When&Where&Who](#whenwherewho)
     - [什么时候用import或者from?](#什么时候用import或者from)
 - [History:](#history)
@@ -42,7 +47,7 @@
 
 # Preface:
 
-估计对python的module的import机制还是不够熟悉,
+自己对python的module的import机制还是不够熟悉,
 
 so need to clear Python的`import`机制和`module`这个概念。
 
@@ -102,10 +107,6 @@ Q1: 他们的区别是什么?  使用的场景不同吧~性能也不同
 
 ## 为什么需要Module?
 
-
-
-## 为什么使用Module?
-
 > `modules` provide an easy way to organize components into a system by serving as `self-contained packages of variables` known as `namespaces`. 
 > 
 > All the names defined at the top level of a module file become attributes of the imported module object
@@ -153,6 +154,64 @@ b.spam('gumby')
 You’ll see the `object.attribute` notation used throughout Python scripts—most objects have useful attributes that are fetched with the “.” `operator`. 
 
 Some are callable things like `functions`, and others are `simple data values` that give object properties (e.g., a person’s name)
+
+---
+
+## Import 是如何工作的？
+
+### Import 的三个步骤?
+
+导入并非只是把一个文件文本插入另一个文件而已。
+
+They are **really runtime operations** that perform three distinct steps the first time a program imports a given file:
+
+1. Find the module’s file.
+2. Compile it to byte code (if needed).
+3. Run the module’s code to build the objects it defines.
+
+### 每次Import都要走这三个步骤吗？
+
+- 第一次导入是
+- 之后的导入相同模块时，会跳过这三个步骤，而只提取内存中已加载的模块对象。
+  - > 原理是：python 把载入的模块存储到一个名为`sys.modules`的表中，并在一次导入操作的开始检查该表。如果模块不存在，将会启动
+
+---
+
+### Step1.搜索
+
+`import b` 中模块名是缩写，没有py后缀、没有具体路径。
+
+所以需要用到`module search path`去定位该模块
+
+--- 
+### Step2.编译(Maybe)
+
+找到符合import语句的`source code`后，某些情况下Python会将其编译成`byte code`.
+
+- `.pyc` 的时间戳比`.py`文件的旧的话，会重新生成`byte code`，否则不会。
+- 如果有`byte code`，没有`source code`，那就会直接加载`byte code`
+    - > 这意味着你可以把一个程序只作为`byte code`文件发布，而避免发送`source code`。
+- 原则:the compile step is bypassed if possible to `speed program startup`.
+
+什么时候编译?
+
+that compilation happens when a file is being imported
+
+---
+
+### Step3.运行
+
+import的最后步骤是 执行模块的`byte code`.
+
+All statements in the file are executed **in turn, from top to bottom**, and any `assignments` made to names during this step generate `attributes` of the resulting module object.
+
+> 函数也是一个assignment，所以也会成为object的一个属性。
+
+This execution step therefore **generates all the tools that the module’s code defines.**
+
+For instance, `def statements` in a file are run at import time to create functions and assign attributes within the module to those functions. 
+
+The functions can then **be called later** in the program by the **file’s importers**.
 
 
 ---
