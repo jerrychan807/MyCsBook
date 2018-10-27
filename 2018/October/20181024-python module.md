@@ -9,6 +9,7 @@
     - [Module是什么及其作用?](#module是什么及其作用)
     - [import Module的相关语法？](#import-module的相关语法)
     - [Module的功能角色?](#module的功能角色)
+    - [相对python的Module,Go语言里面的是什么？](#相对python的modulego语言里面的是什么)
 - [Why](#why)
     - [为什么需要Module?](#为什么需要module)
 - [How](#how)
@@ -100,6 +101,11 @@ Q1: 他们的区别是什么?  使用的场景不同吧~性能也不同
 - `Implementing shared services or data`
     - if you need to provide a `global object` that’s used by more than one function or file, you can code it in a module that can then be imported by many clients.
     - > 比如数据库配置文件等
+
+---
+
+## 相对python的Module,Go语言里面的是什么？
+
 
 ---
 
