@@ -1,5 +1,19 @@
 
 
+<!-- TOC -->
+
+- [Read List](#read-list)
+    - [Code Read](#code-read)
+    - [Network](#network)
+    - [动手系列：](#动手系列)
+    - [MetaLearning:](#metalearning)
+    - [书单](#书单)
+    - [专栏](#专栏)
+    - [参考:](#参考)
+
+<!-- /TOC -->
+
+
 # Read List
 
 ## Code Read
@@ -17,13 +31,6 @@
 
 - [Let’s Build A Web Server. Part 1.](https://ruslanspivak.com/lsbaws-part1/)
 
----
-
-# Programm language:
-## Python:
- - [Python 编码风格指南](https://wdxtub.com/2016/10/13/python-style-guide/)
- - [Python 编程思想](https://wdxtub.com/2016/03/24/thinking-in-python/)
- - [RESTful API 框架 HUG 指南](https://wdxtub.com/2017/03/09/hug-guide/)
 
 ---
 
