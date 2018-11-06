@@ -6,7 +6,7 @@
     - [Code Read](#code-read)
     - [Network](#network)
     - [动手系列：](#动手系列)
-    - [MetaLearning:](#metalearning)
+    - [学习方法:](#学习方法)
     - [书单](#书单)
     - [专栏](#专栏)
     - [参考:](#参考)
@@ -35,10 +35,11 @@
 ---
 
 
-## MetaLearning:
+## 学习方法:
 
 - [概念第一](https://zhuanlan.zhihu.com/p/24023858)
 - [探索第二](https://zhuanlan.zhihu.com/p/24052885?refer=d-b-o-y)
+- [我的学习、归纳方法（给年轻工作者）](http://www.youmeek.com/my-learning-way/)
 
 
 ## 书单
