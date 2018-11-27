@@ -45,7 +45,7 @@ same building blocks` over and over again, without having to create them from sc
 
 ---
 
-### 1.3.1. 4 Layer Internet Model：
+## 1.4. 4 Layer Internet Model：
 
 ![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxke0tmhr8j315s0je7a6.jpg)
 
@@ -55,7 +55,7 @@ same building blocks` over and over again, without having to create them from sc
 
 ---
 
-#### 1.3.1.1. Link Layer:
+### 1.4.1. Link Layer:
 
 ![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxltprgfnrj30n90bu41c.jpg)
 
@@ -81,7 +81,7 @@ Data是怎么传输的?
 
 ----
 
-#### 1.3.1.2. Network layer:
+### 1.4.2. Network layer:
 
 network layer的职责是什么?
 
@@ -106,7 +106,7 @@ datagrams是什么?
 
 ----
 
-#### 1.3.1.3. Network layer 与 Link Layer的交互步骤:
+### 1.4.3. Network layer 与 Link Layer的交互步骤:
 
 1.
 ![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxluclgdw1j30hb0c3zn9.jpg)
@@ -147,7 +147,7 @@ In fact, different Link Layers work in very different ways;
 
 `Ethernet` and `WiFi` are clearly very different. 
 
-This separation of concerns between the `Network Layer` and the `Link Layer` **allows each to focus on its job, without worrying about how the other layer works***. 
+This separation of concerns between the `Network Layer` and the `Link Layer` **allows each to focus on its job, without worrying about how the other layer works**. 
 
 It also means that `a single Network Layer` has a `common
 way` to talk to `many different Link Layers` by simply handing
@@ -157,7 +157,7 @@ This separation of concerns is made possibly by `the modularity of each layer` a
 
 ----
 
-#### 1.3.1.4. the network layer is special：
+### 1.4.4. the network layer is special：
 
 - We must use the `Internet Protocol`. It is the `Internet Protocol`, or `IP`,that holds the `Internet` together
 
@@ -181,7 +181,12 @@ This is `the job of the Transport Layer`….
 
 ----
 
-#### 1.3.1.5. Transport Layer:
+### 1.4.5. Transport Layer:
+
+![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxmfjxm57wj317q0hwdps.jpg)
+
+
+#### 1.4.5.1. TCP:
 
 The most common Transport
 Layer is TCP (`Transmission Control Protocol`)
@@ -215,3 +220,86 @@ to deliver data correctly.
 
 `Reuse is another big advantage of layering.`
 
+---
+
+#### 1.4.5.2. UDP:
+
+
+If an application doesn’t need `reliable delivery`, it can use the much simpler `UDP(User Datagram Protocol)` instead.
+
+UDP just bundles up application data and hands it to the Network Layer for delivery to the other end. 
+
+UDP offers `no delivery guarantees`. 
+
+----
+
+### 1.4.6. Application Layer:
+
+应用层使用下层的协议:
+
+While each application is different, it can `reuse the Transport Layer` by using `the well-defined API` from the Application Layer to the TCP or UDP service beneath.
+
+
+应用层自己的协议:
+
+- applications typically want a `bidirectional
+reliable byte stream` between two end points. 
+- Applications have `a protocol of their own` that `defines the syntax and semantics of data flowing` between the two end points. 
+
+例子：
+
+![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxmg3givamj31880i8ti9.jpg)
+
+- when a `web client` requests a page from a web server, the web client sends a `GET request`. 
+
+- This is one of the commands of the `hypertext transfer protocol`, or http. 
+- `http` dictates that `the GET command` is `sent as an ASCII
+string, along with the URL` of the page being requested. 
+
+应用层的职责:
+
+
+
+- concerned the GET request is ent directly to its `peer` at the
+other end – the web server Application
+- doesn’t need to know how it got there, or how many times it needed to be retransmitted. 
+
+
+每一层的职责：
+
+![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxmg84me26j31840iadp6.jpg)
+
+- each layer communicates with its `peer layer`. 
+- It’s as if each layer is only communicating with the same
+layer at the other end of the link or Internet, without regard for how the layer below gets the data there.
+
+---
+
+### 1.4.7. Put it together:
+
+![](https://ws2.sinaimg.cn/large/006tNbRwgy1fxmh1gr96ej31a20jik62.jpg)
+
+----
+
+### 1.4.8. Summary:
+
+![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxmh5e4lybj318k0hsk65.jpg)
+
+---
+
+## 1.5. 其他
+
+### 1.5.1. IP is “the thin waist”
+
+![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxmhejorv3j31400imgur.jpg)
+
+---
+
+### 1.5.2. the 7-layer OSI model:
+
+the 7-layer `Open Systems Interconnection` or OSI model
+
+![](https://ws4.sinaimg.cn/large/006tNbRwgy1fxmhfj1kuoj31300iqgv1.jpg)
+
+
+The 7 layer model defined layers that were combined in the 4 layer Internet model
