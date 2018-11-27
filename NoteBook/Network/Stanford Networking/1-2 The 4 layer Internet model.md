@@ -1,3 +1,25 @@
+
+- [1. The 4 layer Internet model](#1-the-4-layer-internet-model)
+    - [1.1. 不同Application](#11-%E4%B8%8D%E5%90%8Capplication)
+    - [1.2. Application的相似点:](#12-application%E7%9A%84%E7%9B%B8%E4%BC%BC%E7%82%B9)
+    - [1.3. Black box--- Internet：](#13-black-box----internet)
+    - [1.4. 4 Layer Internet Model：](#14-4-layer-internet-model)
+        - [1.4.1. Link Layer:](#141-link-layer)
+        - [1.4.2. Network layer:](#142-network-layer)
+        - [1.4.3. Network layer 与 Link Layer的交互步骤:](#143-network-layer-%E4%B8%8E-link-layer%E7%9A%84%E4%BA%A4%E4%BA%92%E6%AD%A5%E9%AA%A4)
+        - [1.4.4. the network layer is special：](#144-the-network-layer-is-special)
+        - [1.4.5. Transport Layer:](#145-transport-layer)
+            - [1.4.5.1. TCP:](#1451-tcp)
+            - [1.4.5.2. UDP:](#1452-udp)
+        - [1.4.6. Application Layer:](#146-application-layer)
+        - [1.4.7. Put it together:](#147-put-it-together)
+        - [1.4.8. Summary:](#148-summary)
+    - [1.5. 其他](#15-%E5%85%B6%E4%BB%96)
+        - [1.5.1. IP is “the thin waist”](#151-ip-is-the-thin-waist)
+        - [1.5.2. the 7-layer OSI model:](#152-the-7-layer-osi-model)
+
+---
+
 # 1. The 4 layer Internet model
 
 ---
