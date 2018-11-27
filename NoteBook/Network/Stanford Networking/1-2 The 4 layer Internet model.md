@@ -10,7 +10,7 @@ communicate over the Internet using a `simple model` : `bi-directional reliable 
 
 虽然他们以各异的速度去发送各式各样的数据，但是他们有个相似点。
 
-## 1.2. Application的相似点:
+## 1.2. Application的相似点:
 
 applications want to send and receive data without having to worryabout the `path`, or `route`, that the data takes across
 the Internet. 
