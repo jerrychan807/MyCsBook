@@ -7,6 +7,20 @@
         - [1.2.2. Unreliable](#122-unreliable)
         - [1.2.3. Best effort](#123-best-effort)
         - [1.2.4. Connectionless](#124-connectionless)
+    - [1.3. why the IP service is so simple?](#13-why-the-ip-service-is-so-simple)
+    - [1.4. IP Service Model (Details):](#14-ip-service-model-details)
+    - [1.5. IPv4 Datagram:](#15-ipv4-datagram)
+        - [1.5.1. Destination IP address](#151-destination-ip-address)
+        - [1.5.2. Source IP address](#152-source-ip-address)
+        - [1.5.3. Protocol ID](#153-protocol-id)
+        - [1.5.4. Version](#154-version)
+        - [1.5.5. Total packet length](#155-total-packet-length)
+        - [1.5.6. Time to Live](#156-time-to-live)
+        - [1.5.7. The Packet ID, Flags and Fragment Offset](#157-the-packet-id-flags-and-fragment-offset)
+        - [1.5.8. Type of Service field](#158-type-of-service-field)
+        - [1.5.9. Header Length](#159-header-length)
+        - [1.5.10. Checksum](#1510-checksum)
+    - [1.6. Summary:](#16-summary)
 
 ---
 
@@ -124,3 +138,133 @@ associated with the communication.
 例子:
 
 - In other words, when we make a Skype call lasting several minutes and consisting of many IP datagrams, the IP layer maintains no knowledge of the call, and simply `routes` each `datagram` individually and independently of all the others.
+
+---
+
+## 1.3. why the IP service is so simple?
+
+![](https://ws4.sinaimg.cn/large/006tNbRwgy1fxnkh06kt8j311g0k4wpf.jpg)
+
+- To keep the `network` **simple, dumb and minimal**. Faster, more streamlined and **lower cost** to build and maintain
+    - It was believed that if the network is `kept simple` with very features and requirements, then packets could be delivered very quickly, and at `low cost`
+    - a simple network could be made to run very fast using dedicated `hardware`.
+    - the `network` is implemented by `a large number of routers`
+scattered throughout the network, if they could be kept simple then are likely to be more reliable, more affordable to maintain and will need to be upgraded less often.
+
+- `The end to end principle`: Where possible, implement features in the end hosts
+    -  it is easier to evolve and improve a `feature` if it is
+implemented in `software on end computers` rather than
+baked into the `hardware of the Internet`. 
+    - `features` such as `reliable communications` and `controlling congestion` should be done at the end points – by the source and destination computers, and not by the network
+
+- Allows a variety of `reliable (or unreliable)
+services` to be built on top. 
+    - if IP was `reliable` – in other words if **any missing packets were retransmitted automatically** – then it would not be ideal for some services.(比如 video chat)
+    - IP lets the application choose the reliability service its needs.
+
+- Works over `any link layer`: IP makes very few assumptions about the link layer.
+    - `IP` makes very **little expectation** of the `Link layer` below – the link could be wired or wireless, and requires no retransmission or control of congestion
+
+---
+
+In addition to the basic unreliable, best-effort, connectionless datagram service, 
+
+IP also provides a few other carefully chosen services. 
+
+The designers of IP tried very hard to find a balance between providing the bare minimum needed to make communication work,
+while not providing such a barebone service that it doesn’t really work. 
+
+IP还是提供了少数可选的服务的。
+
+---
+
+## 1.4. IP Service Model (Details):
+
+![](https://ws4.sinaimg.cn/large/006tNbRwgy1fxnkr0ahvzj30tg0hodoc.jpg)
+
+- **prevent packets from looping forever**
+    - IP routers forward packets `hop-by-hop` across the Internet
+    - it is possible for the `forwarding table` in a router to be wrong, causing a packet to start looping round and around following the same path
+    - IP uses a very `simple mechanism` to catch and then delete packets that appear to be stuck in a loop
+    -  IP simply adds a hop-count field in the header of
+every datagram. It is called `the time to live(TTL field)`
+    -  It starts out at a number like 128 and then is **decremented by every router it passes through**. 
+    - If it reaches `zero`, IP concludes that it must be stuck in a loop and the router drops the datagram.
+
+
+- **fragment packets if they are too long**
+    - IP is designed to run over any kind of link.
+    - Most links have a `limit on the size of the packets` they can carry
+
+- **uses a `header checksum` to reduce chances of
+delivering a datagram to the wrong destination**
+
+- Allows for new version of IP
+    - currently IPv4 with 32 bit addresses
+    - IPv6 with 128 bit addresses
+    - Because we are `running out` of IPv4 addresses, the Internet is in a` gradual transition` to IPv6
+
+- allows new fields to be added to the datagram header. 
+    - a mixed blessing
+    - allows `new features` to be added to the header that turn out to be important, but weren’t in the `original standard`
+    - these fields need processing and so require extra
+features in the routers along the path, breaking the goal of a simple, dumb, minimal forwarding path
+    - In practice, `very few options` are used or processed by the routers.
+
+--- 
+
+## 1.5. IPv4 Datagram:
+
+![](https://ws4.sinaimg.cn/large/006tNbRwgy1fxnmfebcxfj30q00g2jwa.jpg)
+
+### 1.5.1. Destination IP address
+
+### 1.5.2. Source IP address
+
+### 1.5.3. Protocol ID
+
+- it allows the destination end host to `demultiplex` arriving packets, sending them to the correct code to process the packet
+-  If the `Protocol ID` has the value “6” then it tells us the data contains a `TCP Segment`, and so we can safely pass the datagram to the TCP code and it will be able to parse the segment correctly
+- `The Internet Assigned Numbers Authority (IANA)` defines over 140 different values of Protocol ID, representing different
+`transport protocols. `
+
+### 1.5.4. Version
+
+- tells us which version of IP (IPv4 and IPv6)
+
+### 1.5.5. Total packet length
+
+### 1.5.6. Time to Live
+
+- helps us to prevent packets accidentally looping in the ntwork forever.
+- Every router is required to `decrement` the TTL field.
+-  If it reaches `zero`, the router should drop the packet.
+
+### 1.5.7. The Packet ID, Flags and Fragment Offset 
+
+- Sometimes a `packet` is too long for the link it is
+about to be sent on
+-  help `routers` to fragment IP packets into smaller
+`self-contained packets` if need-be
+
+
+### 1.5.8. Type of Service field
+
+- gives a `hint` to routers about **how important this packet is.**
+
+### 1.5.9. Header Length
+
+- tells us how big the header is 
+- some headers have optional extra fields to carry extra
+information.
+
+### 1.5.10. Checksum
+
+- a checksum is `calculated over the whole header` so just in case the header is corrupted, we are not likely to deliver a packet to the wrong desination by mistake
+
+---
+
+## 1.6. Summary:
+
+![](https://ws2.sinaimg.cn/large/006tNbRwgy1fxnmsoygqsj30yc0gwdld.jpg)
+
