@@ -194,9 +194,9 @@ order, and can be corrupted. There are `no guarantees`.
 How can the Internet work at all when the packets are not guaranteed to be delivered? 
 
 if an application wants a guarantee
-that its data will be retransmitted when necessary and
-will be delivered to the application in order and
-without corruption then it needs another protocol
+that its data will be `retransmitted` when necessary and
+will be delivered to the application `in order` and
+`without corruption` then it needs another protocol
 running on top of IP. 
 
 This is `the job of the Transport Layer`….
