@@ -19,7 +19,7 @@
 # 1. Layering Principle
 
 ## 1.1. 简述:
-
+  
 `Layering` is a very widely used principle and has been used in networking for decades, predating the Internet.
 
 In fact, layering is a `design principle` used widely outside networking as well --- it is commonly used as a design principle in many many types of `computer system`.
