@@ -59,4 +59,4 @@ if __name__ == '__main__':
     t4.join()
 
     print("the value of shared variable with lock management is %s" % shared_resource_with_lock)
-    print("the value of shared variable with race condition is %s" % shared_resource_with_no_lock)
+    print("the value of shared variable with race 9_condition is %s" % shared_resource_with_no_lock)
