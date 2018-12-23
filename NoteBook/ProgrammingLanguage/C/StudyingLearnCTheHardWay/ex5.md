@@ -35,3 +35,17 @@ They `alter the bits` that make up bytes and other data types in various ways
 
 ### Assignment operators 赋值操作符:
 
+Assignment operators simply `assign expressions to variables`, but C combines a large number of other operators with assignment
+
+![](https://ws4.sinaimg.cn/large/006tNbRwgy1fyh382f45vj30kq0k2q7v.jpg)
+
+### Data operators:
+
+deal with aspects of pointers, member access, and various elements of data structures in C
+
+![](https://ws3.sinaimg.cn/large/006tNbRwgy1fyh38sklelj30km0cigo9.jpg)
+
+### Miscellaneous operators:
+
+![](https://ws3.sinaimg.cn/large/006tNbRwgy1fyh39i45ihj30mi0e677b.jpg)
+
