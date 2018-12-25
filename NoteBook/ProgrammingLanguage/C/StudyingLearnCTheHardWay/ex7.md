@@ -50,3 +50,45 @@ int main(int argc, char * argv[])
 }
 
 ```
+
+## Break it:
+
+调试:
+
+```
+printf("print: %c", nul_byte);
+printf("print: %s", nul_byte);
+```
+
+输出是：
+
+```
+print: 
+print: (null)
+```
+
+gdb下的`nul_byte = 0 '\000'`
+
+
+> The printf function is a variadic function, meaning that it has variable number of arguments. Arguments are pushed on the stack before the function (printf) is called. In order for the function printf to use the stack, it needs to know information about what is in the stack, the format string is used for that purpose.
+> 
+> e.g.
+> ```
+> printf( "%c", ch );    tells the function the argument 'ch' 
+>                        is to be interpreted as a character and sizeof(char)
+> ```
+> 
+> whereas
+> 
+> ```
+> printf( "%s", s );   tells the function the argument 's' is a pointer 
+>                      to a null terminated string sizeof(char*)
+> ```
+> 
+
+
+- [Why does C's printf format string have both %c and %s?](https://stackoverflow.com/questions/10846024/why-does-cs-printf-format-string-have-both-c-and-s)
+
+> ```
+> %s prints out chars until it reaches a 0 (or '\0', same thing).
+> ```
