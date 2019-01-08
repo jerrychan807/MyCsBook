@@ -1,9 +1,6 @@
 # Exercise 7. Variables and Types:
 
 
-
-
-
 ```
 #include <stdio.h>
 
@@ -50,6 +47,30 @@ int main(int argc, char * argv[])
 }
 
 ```
+
+## 部分代码详解:
+
+`printf("The entire universe has %ld bugs.\n", universe_of_defects);`
+
+- using `%ld` that adds a modifier to the usual `%d`. Adding l (the letter) tells the program to print the number as a long decimal
+
+
+
+`printf("That is only a %e portion of the universe.\n",part_of_universe);`
+
+- use `%e` to print it in scientific notation
+
+`char nul_byte = '\0';`
+
+- Make a character, with a special syntax `'\0'` that creates a nul byte character. 
+
+在C语言中,字符串只是一个整数，所以可以做数学运算。
+
+(To C, a character is just an integer. It’s a really small integer)
+
+
+
+---
 
 ## Break it:
 
