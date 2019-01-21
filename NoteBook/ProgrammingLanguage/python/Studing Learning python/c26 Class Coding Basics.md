@@ -3,9 +3,9 @@
 - [1.类产生多个实例对象:](#1%E7%B1%BB%E4%BA%A7%E7%94%9F%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%AF%B9%E8%B1%A1)
   - [类对象提供默认行为:](#%E7%B1%BB%E5%AF%B9%E8%B1%A1%E6%8F%90%E4%BE%9B%E9%BB%98%E8%AE%A4%E8%A1%8C%E4%B8%BA)
   - [实例对象是具体的元素](#%E5%AE%9E%E4%BE%8B%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%85%B7%E4%BD%93%E7%9A%84%E5%85%83%E7%B4%A0)
-- [类通过继承进行定制:](#%E7%B1%BB%E9%80%9A%E8%BF%87%E7%BB%A7%E6%89%BF%E8%BF%9B%E8%A1%8C%E5%AE%9A%E5%88%B6)
+- [2.类通过继承进行定制:](#2%E7%B1%BB%E9%80%9A%E8%BF%87%E7%BB%A7%E6%89%BF%E8%BF%9B%E8%A1%8C%E5%AE%9A%E5%88%B6)
   - [类是模块内的属性](#%E7%B1%BB%E6%98%AF%E6%A8%A1%E5%9D%97%E5%86%85%E7%9A%84%E5%B1%9E%E6%80%A7)
-- [类可以捕获python运算符](#%E7%B1%BB%E5%8F%AF%E4%BB%A5%E6%8D%95%E8%8E%B7python%E8%BF%90%E7%AE%97%E7%AC%A6)
+- [3.类可以捕获python运算符](#3%E7%B1%BB%E5%8F%AF%E4%BB%A5%E6%8D%95%E8%8E%B7python%E8%BF%90%E7%AE%97%E7%AC%A6)
   - [为什么要使用运算符重载](#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD)
 - [世界上最简单的python类](#%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84python%E7%B1%BB)
 - [本章习题:](#%E6%9C%AC%E7%AB%A0%E4%B9%A0%E9%A2%98)
@@ -85,7 +85,7 @@ y = FirstClass()
 
 ---
 
-# 类通过继承进行定制:
+# 2.类通过继承进行定制:
 
 类通过继承,在层次较低的地方覆盖现有的属性，让行为特定化。
 
@@ -148,7 +148,7 @@ z.display() # Current value = "42"
 
 ---
 
-# 类可以捕获python运算符
+# 3.类可以捕获python运算符
 
 类和模块的第三个主要的差别: 运算符重载 `operator overloading`.
 
