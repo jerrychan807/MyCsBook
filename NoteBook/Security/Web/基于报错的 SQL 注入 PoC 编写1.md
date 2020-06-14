@@ -10,21 +10,21 @@
 
 ## 黑盒测试：
 
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fhxp5oot0pj30ik0ca3ze.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhxp5oot0pj30ik0ca3ze.jpg)
 
 
 id=1,正常返回数据
 
 ---
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fhxodrofz3j312q0fi76w.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhxodrofz3j312q0fi76w.jpg)
 
 输入单引号，发现报错。
 说明单引号进入到了sql语句中，并影响了正常sql语句的执行。
 
 ---
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fhxoec9pewj30lu0f6q4d.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhxoec9pewj30lu0f6q4d.jpg)
 
 输入两个单引号，正常返回数据。
 加上报错信息中的提示，猜测sql语句为:
@@ -48,9 +48,9 @@ $sql = 'select username,pwd from users where id = '1' order by 1 --'' limit 0,1'
 
 ```
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fhxorio92ij30m40eumyp.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhxorio92ij30m40eumyp.jpg)
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fhxou5zwojj31dc0eqq5s.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhxou5zwojj31dc0eqq5s.jpg)
 知道字段为3.
 
 
@@ -59,7 +59,7 @@ $sql = 'select username,pwd from users where id = '1' order by 1 --'' limit 0,1'
 
 ### union select:
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fhxow6m9eaj30lc0ty0w2.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhxow6m9eaj30lc0ty0w2.jpg)
 
 ```
 input = 1' union select 1,2,version()  -- '
@@ -105,26 +105,26 @@ $sql = 'select username,pwd from users where id = '1' order by 1 --' ' limit 0,1
 
 ## order by时候的疑问
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fhxow6m9eaj30lc0ty0w2.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhxow6m9eaj30lc0ty0w2.jpg)
 为什么前一个显示出来数据，后一个没有显示出来数据
 
 按道理说，注释符应该将后面的`LIMIT 1`注释掉才对。
 
 ## PHPstorm动态调试显示SQL语句：
 
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fhy7q87b5lj30x801emxd.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhy7q87b5lj30x801emxd.jpg)
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fhy7ugcne9j3102018q33.jpg)
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fhy8teqbnlj30sq0aa75w.jpg)
-
-
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhy7ugcne9j3102018q33.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhy8teqbnlj30sq0aa75w.jpg)
 
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fhy7wh4uc2j30wo0100sv.jpg)
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fhy7xeq3nkj30xw018glt.jpg)
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fhy8ug6ojsj30ro092wfx.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhy7wh4uc2j30wo0100sv.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhy7xeq3nkj30xw018glt.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhy8ug6ojsj30ro092wfx.jpg)
 
 
 
@@ -305,7 +305,7 @@ register(Sqli_Lab_error_based_PoC)
 
 ```
 
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fhyfgu2o2sj318i0jm79u.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fhyfgu2o2sj318i0jm79u.jpg)
 
 
 ---

@@ -84,7 +84,7 @@ function translate($str){
 
 然后就可以返回如下页面：
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fia0by5npzj30qq0o6gp3.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fia0by5npzj30qq0o6gp3.jpg)
 
 
 # XML实体注入漏洞的几种姿势

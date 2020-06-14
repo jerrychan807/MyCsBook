@@ -99,7 +99,7 @@ python的 变量名解析机制`name-resolution scheme`称为 `LEGB`法则:
 2. 当在函数内给一个变量名赋值时,python总是创建或改变本地作用域的变量名,除非变量名在函数中提前声明为全局变量
 3. 当在函数外给一个变量名赋值时(也就是,在一个模块文件的顶层),变量的本地作用域就是全局作用域
 
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fzfhmt8oovj312m0ncn7p.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNc79gy1fzfhmt8oovj312m0ncn7p.jpg)
 
 ---
 

@@ -195,19 +195,19 @@ function stop_hack($value){
 
 > eg1:
 > 
-> ![](https://ws2.sinaimg.cn/large/006tNbRwgy1fysjn28wzsj309q03pgmu.jpg)
+> ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fysjn28wzsj309q03pgmu.jpg)
 > 
 > bits将转为二进制,1的二进制为0001,倒过来为1000,所以取str1(a),打印a.
 > 
 > eg2:
 > 
-> ![](https://ws4.sinaimg.cn/large/006tNbRwgy1fysjnlxblsj309q03w403.jpg)
+> ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fysjnlxblsj309q03w403.jpg)
 > 
 > bits将转为二进制,3的二进制为0011,倒过来为1100,所以取str1(a),str2(b),打印a,b.
 > 
 > eg3:
 > 
-> ![](https://ws1.sinaimg.cn/large/006tNbRwgy1fysjq06qmwj30a603q75q.jpg)
+> ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fysjq06qmwj30a603q75q.jpg)
 > 
 > 1|4转为二进制为0001 | 0100, | 是进行或运算，得到0101，倒过来为1010,所以取str1(a),str3©,打印a,c.
 
