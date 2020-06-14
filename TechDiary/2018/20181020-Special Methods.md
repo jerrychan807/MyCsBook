@@ -99,7 +99,7 @@ need to clear `Special Methods` 特殊方法 这个concept。
 
 这时候`your-object`就跟`built-in object`高度一致了。拥有共同的接口。
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fwetkmixnqj31kw0szx5n.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fwetkmixnqj31kw0szx5n.jpg)
 
 这就是所谓的magic之处吧。
 

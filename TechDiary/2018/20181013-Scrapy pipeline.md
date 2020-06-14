@@ -96,7 +96,7 @@ class SubjectIdPipeline(object):
 
 是我对Scrapy这个框架的执行流程和pipeline本身的应用范围还了解得不够
 
-![执行流程图](https://ws4.sinaimg.cn/large/006tNbRwgy1fw9un40z7uj31kw0yz49b.jpg)
+![执行流程图](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fw9un40z7uj31kw0yz49b.jpg)
 
 从流程图可以看到
 

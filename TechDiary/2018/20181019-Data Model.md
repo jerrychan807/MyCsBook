@@ -56,7 +56,7 @@ It formalizes the interfaces of the building blocks of the language itself, such
 
 Python是framework，而 Data Model是API的references，描述了那些会被framework自身调用的方法。
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fwdft3itr9j30ka0d6408.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fwdft3itr9j30ka0d6408.jpg)
 
 ## Data Model 的作用？
 

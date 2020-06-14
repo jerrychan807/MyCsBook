@@ -118,7 +118,7 @@ def __repr__(self):
 
 ## 知识结构:
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fx4dtxe0h0j31jc0xc7hi.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fx4dtxe0h0j31jc0xc7hi.jpg)
 
 
 ---
