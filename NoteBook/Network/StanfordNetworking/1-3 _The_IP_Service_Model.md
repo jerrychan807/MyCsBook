@@ -31,7 +31,7 @@ the Network Layer is the most important layer of the Internet
 each layer provides a “service” to the layer above.
 
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxn0eopujxj30je09bwh9.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxn0eopujxj30je09bwh9.jpg)
 
 
 ## 1.1. 数据的传输过程
@@ -57,12 +57,12 @@ associated with the datagrams.
 
 ## 1.2. property of IP service:
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxn0ukhuirj30kq098whu.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxn0ukhuirj30kq098whu.jpg)
 
 
 ### 1.2.1. Datagram:
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxn13rv28mj30l0095gpg.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxn13rv28mj30l0095gpg.jpg)
 
 提供的服务:
 - `IP` is a `datagram service`
@@ -143,7 +143,7 @@ associated with the communication.
 
 ## 1.3. why the IP service is so simple?
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fxnkh06kt8j311g0k4wpf.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxnkh06kt8j311g0k4wpf.jpg)
 
 - To keep the `network` **simple, dumb and minimal**. Faster, more streamlined and **lower cost** to build and maintain
     - It was believed that if the network is `kept simple` with very features and requirements, then packets could be delivered very quickly, and at `low cost`
@@ -180,7 +180,7 @@ IP还是提供了少数可选的服务的。
 
 ## 1.4. IP Service Model (Details):
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fxnkr0ahvzj30tg0hodoc.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxnkr0ahvzj30tg0hodoc.jpg)
 
 - **prevent packets from looping forever**
     - IP routers forward packets `hop-by-hop` across the Internet
@@ -215,7 +215,7 @@ features in the routers along the path, breaking the goal of a simple, dumb, min
 
 ## 1.5. IPv4 Datagram:
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fxnmfebcxfj30q00g2jwa.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxnmfebcxfj30q00g2jwa.jpg)
 
 ### 1.5.1. Destination IP address
 
@@ -266,5 +266,5 @@ information.
 
 ## 1.6. Summary:
 
-![](https://ws2.sinaimg.cn/large/006tNbRwgy1fxnmsoygqsj30yc0gwdld.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxnmsoygqsj30yc0gwdld.jpg)
 

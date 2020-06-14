@@ -37,7 +37,7 @@ A self-contained unit of data that carries information necessary for it to reach
 
 ### 1.3.2. 描述:
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxq7d3mgxej30zc0iq45a.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxq7d3mgxej30zc0iq45a.jpg)
 
 
 - `Packet switching` is the idea that we `break` our data up into
@@ -49,13 +49,13 @@ A self-contained unit of data that carries information necessary for it to reach
 
 简单的模型:
 
-- ![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxq7p8ve7jj319y0eaqbl.jpg)
+- ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxq7p8ve7jj319y0eaqbl.jpg)
 - `“self routing”` or `“source routing,”` : each packet contains an explicit route, specifying the IDs of each packet switch along the way
 - but it raises `big security issues`. People owning routers don’t want you telling them how to send packets, because maybe you can trick them to sending them somewhere they shouldn’t, such as secure computers.
 
 优化的模型:
 
-- ![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxq7wht7avj319k0ecn4o.jpg)
+- ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxq7wht7avj319k0ecn4o.jpg)
 - a `switch` can have `a table of destination addresses and the next hop.` 
 - When it receives a packet, it looks up the
 address in the table, and sends the packet to the
@@ -128,7 +128,7 @@ of the link.
 
 #### 1.4.2.1. Data traffic is bursty:
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxs9lru3t2j30lg09xdhz.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxs9lru3t2j30lg09xdhz.jpg)
 
 Data traffic is `bursty`: rather than always sending
 and receiving data at `a fixed rate`, usage jumps and drops,
@@ -150,7 +150,7 @@ For example, if your friend is reading, you can use all of the link. If both of 
 
 ## 1.5. Summary:
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxs9r3lro9j30l60awq5e.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxs9r3lro9j30l60awq5e.jpg)
 
 
 This `simple building block` was revolutionary at the

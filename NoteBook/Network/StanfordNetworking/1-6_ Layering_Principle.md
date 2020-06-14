@@ -26,7 +26,7 @@ In fact, layering is a `design principle` used widely outside networking as well
 
 ## 1.2. definition of layering:
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxurlur4x6j31oa0s6amr.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxurlur4x6j31oa0s6amr.jpg)
 
 - Layering is the name we give to the organization of a system into a number of `separate functional components`, or layers.
 - The layers are hierarchical and they `communicate sequentially`; i.e. each layer has an interface only to the layer directly above or below.
@@ -37,7 +37,7 @@ In fact, layering is a `design principle` used widely outside networking as well
 
 ### 1.3.1. postal service:
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxurpb7qm7j31bf0u04m9.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxurpb7qm7j31bf0u04m9.jpg)
 
 - The service is `layered`. 
 - At the top, I don’t care how the letter gets from me to Phil – whether it goes by plane, truck or hovercraft. And I don’t care about the route it takes, or how many sorting offices it passes through along the way. I don’t mind whether Olive walks, skips, bicycles or runs to the mailbox; I don’t care which mailbox she posts the letter in
@@ -48,7 +48,7 @@ In fact, layering is a `design principle` used widely outside networking as well
 
 ### 1.3.2. computer system:
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxurv2uu7ij31ed0u0qht.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxurv2uu7ij31ed0u0qht.jpg)
 
 - `Layering breaks down the overall problem of writing programs` that execute on hardware into modules, or functional components, each with a well defined role and providing a well defined service to the layer above. 
 - It also provides `a clear separation of concerns`
@@ -87,7 +87,7 @@ one really telling example of this with something called `NATs, or Network Addre
 
 ## 1.4. Reasons for layering:
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxusek552ij31et0u0qdn.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxusek552ij31et0u0qdn.jpg)
 
 
 ### 1.4.1. Modularity: 
