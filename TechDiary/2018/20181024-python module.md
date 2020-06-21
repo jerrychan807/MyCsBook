@@ -124,7 +124,7 @@ Q1: 他们的区别是什么?  使用的场景不同吧~性能也不同
 
 ## 如何从Module到一个project/program?
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fwlnhjndutj30tk0h4gno.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fwlnhjndutj30tk0h4gno.jpg)
 
 The program is structured as **one main, top-level file**, along with zero or more supplemental files known as modules in Python.
 

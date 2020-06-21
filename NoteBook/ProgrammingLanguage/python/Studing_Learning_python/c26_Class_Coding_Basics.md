@@ -81,7 +81,7 @@ y = FirstClass()
 
 此时有3个连接的命名空间:
 
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fzebybfyxgj30n20amjsv.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNc79gy1fzebybfyxgj30n20amjsv.jpg)
 
 ---
 
@@ -132,7 +132,7 @@ z.setdata(42)
 z.display() # Current value = "42"
 ```
 
-![](https://ws4.sinaimg.cn/large/006tNc79ly1fzeiqr73l1j314q0he44v.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNc79ly1fzeiqr73l1j314q0he44v.jpg)
 
 我们不是修改FirstClass,而是对它进行了定制。
 
@@ -288,10 +288,10 @@ print(rec.method()) # SUE
 
 # 本章习题:
 
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fzelipojhej30qc0imjwj.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNc79gy1fzelipojhej30qc0imjwj.jpg)
 
 # 习题解答:
 
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fzeljifotsj30u011d1kx.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNc79gy1fzeljifotsj30u011d1kx.jpg)
 
 

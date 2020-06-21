@@ -29,7 +29,7 @@ The technical term for `processing the symbols and keywords` of a programming la
 The word for one of these symbols or keywords is a `lexeme`
 
 
-![](https://ws2.sinaimg.cn/large/006tNbRwgy1fyh3eqbcaqj30u01b1txq.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fyh3eqbcaqj30u01b1txq.jpg)
 
 > `size of` 应该和python里的`len()`有关联
 

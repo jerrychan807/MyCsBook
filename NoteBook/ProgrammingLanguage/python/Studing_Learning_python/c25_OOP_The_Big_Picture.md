@@ -135,7 +135,7 @@ OOP不仅仅是一门技术，更是一种经验。
 
 找出attribute首次出现的地方，先搜索object，然后是该对象之上的所有类，由下至上，由左至右。
 
-![](https://ws1.sinaimg.cn/large/006tNc79ly1fzdgw1e5edj318k0lq7b8.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNc79ly1fzdgw1e5edj318k0lq7b8.jpg)
 
 
 `Superclasses` provide behavior shared by all their `subclasses`, but because the search proceeds from the bottom up, `subclasses` may `override` behavior defined in their superclasses by redefining superclass names lower in the tree.

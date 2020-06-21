@@ -69,7 +69,9 @@ same building blocks` over and over again, without having to create them from sc
 
 ## 1.4. 4 Layer Internet Model：
 
-![](https://tva1.sinaimg.cn/large/006tNbRwgy1fxke0tmhr8j315s0je7a6.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxke0tmhr8j315s0je7a6.jpg)
+
 
 - each layer has a `different responsibility`
 - each layer building a `service` on top of the one below
@@ -79,7 +81,7 @@ same building blocks` over and over again, without having to create them from sc
 
 ### 1.4.1. Link Layer:
 
-![](https://tva3.sinaimg.cn/large/006tNbRwgy1fxltprgfnrj30n90bu41c.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxltprgfnrj30n90bu41c.jpg)
 
 
 Internet由什么组成?
@@ -111,7 +113,9 @@ network layer的职责是什么?
 
 packet是什么?
 
-![](https://tva1.sinaimg.cn/large/006tNbRwgy1fxlu41d5njj30m307twht.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxlu41d5njj30m307twht.jpg)
+
 
 
 - A packet is an important `basic building block` in networks. 
@@ -131,7 +135,8 @@ datagrams是什么?
 ### 1.4.3. Network layer 与 Link Layer的交互步骤:
 
 1.
-![](https://tva1.sinaimg.cn/large/006tNbRwgy1fxluclgdw1j30hb0c3zn9.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxluclgdw1j30hb0c3zn9.jpg)
 
 
 
@@ -141,7 +146,8 @@ datagrams是什么?
 
 2.
 
-![](https://tva3.sinaimg.cn/large/006tNbRwgy1fxluhkskz7j30hd0c9adc.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxluhkskz7j30hd0c9adc.jpg)
 
 - The `Link Layer of the router` accepts the `datagram`
 from the link, and hands it up to the `Network Layer` in the router.
@@ -150,7 +156,9 @@ from the link, and hands it up to the `Network Layer` in the router.
 
 3.
 
-![](https://tva3.sinaimg.cn/large/006tNbRwgy1fxlumlpv9tj30xy0c4agm.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxlumlpv9tj30xy0c4agm.jpg)
+
 
 - It does this by sending to the `Link Layer` again, to carry it
 over the next link. 
@@ -205,7 +213,8 @@ This is `the job of the Transport Layer`….
 
 ### 1.4.5. Transport Layer:
 
-![](https://tva3.sinaimg.cn/large/006tNbRwgy1fxmfjxm57wj317q0hwdps.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmfjxm57wj317q0hwdps.jpg)
 
 
 #### 1.4.5.1. TCP:
@@ -270,7 +279,9 @@ reliable byte stream` between two end points.
 
 例子：
 
-![](https://tva3.sinaimg.cn/large/006tNbRwgy1fxmg3givamj31880i8ti9.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmg3givamj31880i8ti9.jpg)
+
 
 - when a `web client` requests a page from a web server, the web client sends a `GET request`. 
 
@@ -289,7 +300,9 @@ other end – the web server Application
 
 每一层的职责：
 
-![](https://tva1.sinaimg.cn/large/006tNbRwgy1fxmg84me26j31840iadp6.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmg84me26j31840iadp6.jpg)
+
 
 - each layer communicates with its `peer layer`. 
 - It’s as if each layer is only communicating with the same
@@ -299,13 +312,16 @@ layer at the other end of the link or Internet, without regard for how the layer
 
 ### 1.4.7. Put it together:
 
-![](https://tva2.sinaimg.cn/large/006tNbRwgy1fxmh1gr96ej31a20jik62.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmh1gr96ej31a20jik62.jpg)
+
 
 ----
 
 ### 1.4.8. Summary:
 
-![](https://tva1.sinaimg.cn/large/006tNbRwgy1fxmh5e4lybj318k0hsk65.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmh5e4lybj318k0hsk65.jpg)
 
 ---
 
@@ -313,7 +329,9 @@ layer at the other end of the link or Internet, without regard for how the layer
 
 ### 1.5.1. IP is “the thin waist”
 
-![](https://tva1.sinaimg.cn/large/006tNbRwgy1fxmhejorv3j31400imgur.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmhejorv3j31400imgur.jpg)
+
 
 ---
 
@@ -321,7 +339,8 @@ layer at the other end of the link or Internet, without regard for how the layer
 
 the 7-layer `Open Systems Interconnection` or OSI model
 
-![](https://tva4.sinaimg.cn/large/006tNbRwgy1fxmhfj1kuoj31300iqgv1.jpg)
+
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmhfj1kuoj31300iqgv1.jpg)
 
 
 The 7 layer model defined layers that were combined in the 4 layer Internet model

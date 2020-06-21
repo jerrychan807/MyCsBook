@@ -17,7 +17,7 @@
 
 ## 1.1. stream of data 传输:
 
-![](https://ws2.sinaimg.cn/large/006tNbRwgy1fxnrja2ycnj30yo0eqgpk.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxnrja2ycnj30yo0eqgpk.jpg)
 
 接下来看看 packets的传输
 
@@ -25,13 +25,13 @@
 
 ## 1.2. Packet在Server和Browser之间的传输:
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxord7du9tj31gq0u042w.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxord7du9tj31gq0u042w.jpg)
 
 ---
 
 ### 1.2.1. open a connection --- Three way handshake:
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxorf4ofs5j31pe0sito7.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxorf4ofs5j31pe0sito7.jpg)
 
 1. the client sends a `“synchronize”` message to the server,
 2. the server responds with a “synchronize” message that also acknowledges the clients “synchronize”, or a `“synchronize and acknowledge message”`
@@ -51,7 +51,7 @@ From the perspective of the `network layer`, `packets` sent to different applica
 
 This means that to open `a TCP stream` to another `program`, we need two addresses.
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxosgy4olbj31nj0u0wsl.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxosgy4olbj31nj0u0wsl.jpg)
 
 Two addresses：
 
@@ -73,7 +73,7 @@ Two addresses：
 - This `router` is itself connected to `other routers`. 
 - `IP packets` between the `client` and `server` take many `“hops`,”where a hop is a link connecting two routers
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxosrpeujnj31r60icqd2.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxosrpeujnj31r60icqd2.jpg)
 
 例子:
 
@@ -92,13 +92,13 @@ Router:
 
 -  when you log into a router using TCP, the IP packets are destined to the router’s own IP address.
 
-> 例如 ![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxpabbj714j30e709eabr.jpg)
+> 例如 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxpabbj714j30e709eabr.jpg)
 
 ---
 
 #### 1.2.2.2. Inside Each Hop:
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxpagk9eohj30kr0e1whi.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxpagk9eohj30kr0e1whi.jpg)
 
 route是如何决定把`packet`转发去哪的?
 
@@ -106,7 +106,7 @@ route是如何决定把`packet`转发去哪的?
 
 什么是 `forwarding table`?
 
-- ![](https://ws4.sinaimg.cn/large/006tNbRwgy1fxpaibenrej305b05t74t.jpg)
+- ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxpaibenrej305b05t74t.jpg)
 - A forwarding table consists of a set of `IP address patterns` and the `link` to send across for each pattern.
 
 使用`forwarding table`的过程?
@@ -130,7 +130,7 @@ and have `a router connecting you to the larger Internet`.
 
 ## 1.3. Under the Hood:
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxpb1yy1esj30o20akabp.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxpb1yy1esj30o20akabp.jpg)
 
 how the network looks like to `the end hosts`, `the computers`, as they `exchange packets` at the network layer?
 
@@ -139,7 +139,7 @@ how the network looks like to `the end hosts`, `the computers`, as they `exchang
 1. open a connection : `three way handshake`
 2. request & response
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxpb9huhdjj30z70e5noz.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxpb9huhdjj30z70e5noz.jpg)
 
 ---
 
@@ -147,7 +147,7 @@ what does it look like inside the network layer? What hops do these packets take
 
 ### 1.3.2. inside the network layer:
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fxpbkclh7rj30ze0gtb29.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxpbkclh7rj30ze0gtb29.jpg)
 
 We’ve now seen 
 

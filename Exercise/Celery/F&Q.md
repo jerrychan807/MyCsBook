@@ -4,7 +4,7 @@
 
 任务参数有一个中文的参数,无法存到`django_celery_beat_periodictask`这个表中。
 
-![](https://ws1.sinaimg.cn/large/006tNbRwgy1fxhrj819z6j31h40p2qry.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxhrj819z6j31h40p2qry.jpg)
 
 找到django-celery-beat这个issue:[The name field of PeriodicTask does not supports Chinese characters](https://github.com/celery/django-celery-beat/issues/10)
 

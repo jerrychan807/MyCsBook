@@ -3,7 +3,7 @@
 # 什么是SQL注入
 
 
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fi7lu2cs7bj31by0rkn21.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNc79gy1fi7lu2cs7bj31by0rkn21.jpg)
 
 # 大局阅读：
 ## sqlwaf()函数:
@@ -63,16 +63,16 @@ if ( !empty( $_GET['id'] ) ) {
 
 - **先大范围再小范围**
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fi8tp3lgyyj30nw0ymjv5.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8tp3lgyyj30nw0ymjv5.jpg)
 
 照猫画虎一下：
 
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fi8u911yjej30wm17gjyo.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8u911yjej30wm17gjyo.jpg)
 
 发现确切字段是4。
 
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fi8ua0uchbj311605gjt0.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8ua0uchbj311605gjt0.jpg)
 
 
 
@@ -93,21 +93,21 @@ if ( !empty( $_GET['id'] ) ) {
 payload =`1 uni||on se||lect 1,2,3,4 fr||om admin`
 经过sqlwaf过滤后为 `1 union select 1,2,3,4 from admin`
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fi8v4trpvqj31he0bq0ur.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8v4trpvqj31he0bq0ur.jpg)
 
 payload =  `1 uni||on se||lect 1,version(),3,4 fr||om admin`
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fi8v4kw4inj31ii0bo76g.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8v4kw4inj31ii0bo76g.jpg)
 
 payload =  `1 uni||on se||lect *,4 fr||om admin`
 
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fi8v5obs0sj31kw0ccadb.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8v5obs0sj31kw0ccadb.jpg)
 
 基于编写poc的payload：
 payload =  `1 uni||on se||lect 1,md5(233),3,4 fr||om admin`
 
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fi8veuzcjgj31kw087wg4.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8veuzcjgj31kw087wg4.jpg)
 
 ---
 
@@ -149,5 +149,5 @@ function sqlwaf( $str ) {
 
 
 
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fi8vi6ub5tj30p20limyk.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tKfTcgy1fi8vi6ub5tj30p20limyk.jpg)
 

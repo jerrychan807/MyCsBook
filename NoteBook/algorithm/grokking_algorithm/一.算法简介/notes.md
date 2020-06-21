@@ -17,7 +17,7 @@
 
 在1~100的数字找到某个数字
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fwtksk0gh3j30iq04swfb.jpg)
+![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fwtksk0gh3j30iq04swfb.jpg)
 
 
 # 目标：
