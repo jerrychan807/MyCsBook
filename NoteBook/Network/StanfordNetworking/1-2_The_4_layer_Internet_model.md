@@ -69,7 +69,9 @@ same building blocks` over and over again, without having to create them from sc
 
 ## 1.4. 4 Layer Internet Model：
 
+
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxke0tmhr8j315s0je7a6.jpg)
+
 
 - each layer has a `different responsibility`
 - each layer building a `service` on top of the one below
@@ -111,7 +113,9 @@ network layer的职责是什么?
 
 packet是什么?
 
+
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxlu41d5njj30m307twht.jpg)
+
 
 
 - A packet is an important `basic building block` in networks. 
@@ -131,6 +135,7 @@ datagrams是什么?
 ### 1.4.3. Network layer 与 Link Layer的交互步骤:
 
 1.
+
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxluclgdw1j30hb0c3zn9.jpg)
 
 
@@ -141,6 +146,7 @@ datagrams是什么?
 
 2.
 
+
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxluhkskz7j30hd0c9adc.jpg)
 
 - The `Link Layer of the router` accepts the `datagram`
@@ -150,7 +156,9 @@ from the link, and hands it up to the `Network Layer` in the router.
 
 3.
 
+
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxlumlpv9tj30xy0c4agm.jpg)
+
 
 - It does this by sending to the `Link Layer` again, to carry it
 over the next link. 
@@ -204,6 +212,7 @@ This is `the job of the Transport Layer`….
 ----
 
 ### 1.4.5. Transport Layer:
+
 
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmfjxm57wj317q0hwdps.jpg)
 
@@ -270,7 +279,9 @@ reliable byte stream` between two end points.
 
 例子：
 
+
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmg3givamj31880i8ti9.jpg)
+
 
 - when a `web client` requests a page from a web server, the web client sends a `GET request`. 
 
@@ -289,7 +300,9 @@ other end – the web server Application
 
 每一层的职责：
 
+
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmg84me26j31840iadp6.jpg)
+
 
 - each layer communicates with its `peer layer`. 
 - It’s as if each layer is only communicating with the same
@@ -299,11 +312,14 @@ layer at the other end of the link or Internet, without regard for how the layer
 
 ### 1.4.7. Put it together:
 
+
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmh1gr96ej31a20jik62.jpg)
+
 
 ----
 
 ### 1.4.8. Summary:
+
 
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmh5e4lybj318k0hsk65.jpg)
 
@@ -313,13 +329,16 @@ layer at the other end of the link or Internet, without regard for how the layer
 
 ### 1.5.1. IP is “the thin waist”
 
+
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmhejorv3j31400imgur.jpg)
+
 
 ---
 
 ### 1.5.2. the 7-layer OSI model:
 
 the 7-layer `Open Systems Interconnection` or OSI model
+
 
 ![](https://raw.githubusercontent.com/jerrychan807/imggg/master/006tNbRwgy1fxmhfj1kuoj31300iqgv1.jpg)
 
