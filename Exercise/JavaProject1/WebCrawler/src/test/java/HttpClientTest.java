@@ -26,6 +26,7 @@ public class HttpClientTest {
 
         // 构造请求参数,并添加参数
         URI uri = new URIBuilder(url).addParameters(nameValuePairList).build();
+        System.out.println("[*]uri: " + uri);
 
         // 构造Headers
         List<Header> headerList = Lists.newArrayList();
