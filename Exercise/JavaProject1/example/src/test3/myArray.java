@@ -140,8 +140,26 @@ public class myArray {
         System.out.println("2 bMail is " + bMail);
 
         // 演示是否是数字
+        boolean bIsNum = mA.isNumber("1234");
+        System.out.println("1 bIsNum is " + bIsNum);
+        bIsNum = mA.isNumber("123r4");
+        System.out.println("2 bIsNum is " + bIsNum);
 
+        //演示是否是英文字符
+        boolean bIsStr = mA.isString("wer");
+        System.out.println("1: bIsStr=" + bIsStr);
+        bIsStr = mA.isString("wer3");
+        System.out.println("2: bIsStr=" + bIsStr);
 
+        //演示检查日期
+        int iIsTime = mA.chickData("2003-12-98");
+        System.out.println("1: iIsTime=" + iIsTime);
+        iIsTime = mA.chickData("2003-111-08");
+        System.out.println("2：iIsTime=" + iIsTime);
+        iIsTime = mA.chickData("2003-10-08");
+        System.out.println("3：iIsTime=" + iIsTime);
+        iIsTime = mA.chickData("2000-02-30");
+        System.out.println("4：iIsTime=" + iIsTime);
     }
 
 
