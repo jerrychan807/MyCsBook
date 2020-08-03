@@ -26,6 +26,23 @@ public class DataLearnerCrawlerTwo {
         // 第一步,将字符内容解析成一个Document类
         Document doc = Jsoup.parse(rawHtmlContent);
 
+        // 根据需要得到的标签,选择提取相应的标签内容
+        Elements elements = doc.select("div[id=left_list]").select("div[class=card-block pt-4 pb-4]");
+        for (Element element : elements) {
+            String title = element.select("h5[class=card-title]").text();
+
+            String intro = element.select("p[class=card-text text-justify]").text();
+
+            String user = element.select("span[class=fa fa-user]").select("a").text();
+
+            System.out.println("================");
+            System.out.println("Title:\t" + title);
+            System.out.println("Introduce:\t" + intro);
+            System.out.println("Author:\t" + user);
+
+
+        }
+
 
     }
 
