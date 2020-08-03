@@ -36,9 +36,41 @@ public class operateVector {
      *<br>输出变量：Vector 结果
      *<br>其它说明：如果插入位置超出实例实际的位置将返回null
      */
-//    public Vector<Object> insert() {
-//
-//    }
+    public Vector<Object> insert(Vector<Object> vTemp, int iTemp, Object oTemp) {
+        if (iTemp > vTemp.size()) {
+            System.out.println("数据超界");
+            return null;
+        } else {
+            vTemp.insertElementAt(oTemp, iTemp);
+        }
+        return vTemp;
+
+    }
 
 
+    /*
+    *<br>方法说明：移除数据
+    *<br>输入参数：Vector vTemp 待删除矢量对象
+    *<br>输入参数：int iTemp 删除数据的位置
+    *<br>输出变量：Vector
+    *<br>其它说明：如果删除超界的数据，将返回null
+    */
+    public Vector<Object> delete(Vector<Object> vTemp, int iTemp) {
+        if (iTemp > vTemp.size()) {
+            System.out.println("数据超界");
+            return null;
+        } else {
+            vTemp.removeElementAt(iTemp);
+        }
+        return vTemp;
+
+    }
+
+    /*
+    *<br>方法说明：输出信息
+    *<br>输入参数：String sTemp 输出信息名称
+    *<br>输入参数：Object oTemp 输出信息值
+    *<br>返回变量：无
+    */
+    public void print(String sTemp,)
 }
