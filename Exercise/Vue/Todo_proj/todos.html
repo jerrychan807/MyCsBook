@@ -13,8 +13,14 @@
 <div id="app">
     <input type="text" v-bind:class='{empty:!count}' v-model="value">
     <input type="button" value="发送" v-on:click="send">
-    <div>value的值是:{{ value }}</div>
+
     <!-- 引用 count -->
+    <div v-if="count">
+        <div>value的值是:{{ value }}</div>
+    </div>
+    <div v-else>
+        <div>不显示value的值</div>
+    </div>
     <div>字数: {{ count }}</div>
 </div>
 </body>
@@ -30,8 +36,14 @@
         // 这是新增的方法
         methods: {
             send: function () {
-                alert('发送成功!');
-                this.value = ''
+                if (this.value ==""){
+                    alert('请填写数据!');
+                    this.value = ''
+                }else {
+                    alert('发送成功!');
+                    this.value = ''
+                }
+
             }
         },
 

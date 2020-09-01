@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<div id="app">
+
+
+    <span v-html="content"></span>
+    <br>
+    <span v-text="content"></span>
+
+</div>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            content: "<a href='www.baidu.com'>fatfat</a>"
+        }
+
+    })
+</script>
+</body>
+</html>

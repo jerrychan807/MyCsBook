@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Vue Todo</title>
+    <style>
+        .empty {
+            border-color: red;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+
+        .selected {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="todo-app">
+    <div>
+        <input type="button" value="全部标为完成"/>
+        <input type="text" placeholder="添加 todo">
+    </div>
+    <!--todo list-->
+    <ul>
+        <li v-for="todo in todos" :key="todo.id">
+
+            <span :class="{finished: todo.finished}" @dblclick="editedTodo(todo)">{{todo.title}}</span>
+            <input v-if="!todo.completed" type="button" value="标为完成" @click="markAsCompleted(todo)">
+            <input v-if="todo.completed" type="button" value="还原" @click="backCompleted(todo)">
+            <input type="button" value="删除" @click="removeTodo">
+            <input v-if="editedTodo !==null && editedTodo.id===todo.id" type="text" value="编辑 todo..."/>
+
+
+        </li>
+    </ul>
+    <input v-if="!emptyChecked" type="text" placeholder="没有任何内容输入" v-bind:class="{empty:!emptyChecked}"
+           v-model="newTodoTitle"
+           @keyup.enter="addTodo"/>
+    <input v-else type="text" placeholder="添加todo" v-model="newTodoTitle"
+           @keyup.enter="addTodo"/>
+    <!--end todo list-->
+    <div>
+        <span>剩余 3 项未完成 ---</span>
+        <span>筛选：
+      <input type="button" class="selected" value="全部">
+      <input type="button" value="进行中">
+      <input type="button" value="已完成">
+      <input type="button" value="清除已完成">
+      <input type="button" value="清除全部">
+    </span>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<script>
+    let id = 0; // 用于 id 生成
+    var app = new Vue({
+        el: '#todo-app',
+        methods: {
+            addTodo: function () {
+                if (this.newTodoTitle === '') {
+                    this.checkEmpty = true
+                    return
+                }
+                this.todos.push({id: id++, title: this.newTodoTitle, completed: false});
+                this.newTodoTitle = ''
+                this.checkEmpty = false
+            },
+            markAsCompleted: function (todo) {
+                todo.completed = true
+
+            },
+            backCompleted: function (todo) {
+                todo.completed = false
+            },
+            removeTodo: function (todo) {
+                var result = confirm('是否刪除!');
+                if (result) {
+                    alert('刪除成功!');
+                    this.todos.splice(this.todos.indexOf(todo), 1)
+
+                } else {
+                    alert('不刪除!');
+                }
+            },
+            editTodo: function (todo) {
+                this.editTodo = {id: todo.id, title: todo.title, finished: todo.finished}
+            }
+
+
+        },
+
+        data: function () {
+            return {
+                todos: [],
+                newTodoTitle: '',
+                checkEmpty: false,
+                editedTodo: null // 用于暂存编辑前的 todo 状态
+            }
+        },
+        computed: {
+            emptyChecked: function () {
+                return this.newTodoTitle.length === 0 && this.checkEmpty
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

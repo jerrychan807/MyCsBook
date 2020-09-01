@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <button @click="addnum">+</button>
+    <span>{{num}}</span>
+    <button @click="reducenum">-</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            num: 0,
+        },
+
+        methods: {
+            addnum: function () {
+                if (this.num > 9) {
+                    alert("最大值为10")
+                } else {
+                    this.num += 1
+                }
+
+            },
+            reducenum: function () {
+                if (this.num < 1) {
+                    alert("最小值为0")
+                } else {
+                    this.num -= 1
+                }
+
+            }
+        }
+
+    })
+</script>
+</body>
+</html>
