@@ -115,6 +115,12 @@ apache解析文件的规则是从右到左开始判断解析,如果后缀名为�
 
 在IIS-6.0的版本，服务器默认不解析;后面的内容，所以xxx.asp;.jpg会被解析成xxx.asp。
 
+## nginx
+
+低版本nginx
+nginx 0.5.x、nginx 0.6.x中可以通过在任意文件名后面增加%00.php解析为php
+
+[解析漏洞总结](https://uuzdaisuki.com/2018/05/01/解析漏洞总结/)
 
 
 ---
@@ -154,4 +160,6 @@ XPATH注入
 
 XML注入
 
-XXE注入http://blog.csdn.net/u011721501/article/details/43775691
+XXE注入
+
+http://blog.csdn.net/u011721501/article/details/43775691

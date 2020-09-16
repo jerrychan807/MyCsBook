@@ -27,7 +27,7 @@
 					<p id="whereami">
 					</p>
 					<h1>
-						Welcome <span th:text="${session.user.username}"/>!
+						<!--Welcome <span th:text="${session.user.username}"/>!-->
 					</h1>
 					<table class="table">
 						<tr class="table_header">
@@ -50,28 +50,49 @@
 								Operation
 							</td>
 						</tr>
-
-						<tr  th:class=${empStat.odd}?'row1':'row2' th:each="emp,empStat : ${emps}">
+						<tr class="row1" th:each="emp:${emps}">
 							<td>
-								<span th:text="${emp.id}"/>
+                                <span th:text="${emp.id}"/>
 							</td>
 							<td>
-								<span th:text="${emp.name}"/>
+                                <span th:text="${emp.name}"/>
 							</td>
 							<td>
-								<span th:text="${emp.salary}"/>
+                                <span th:text="${emp.salary}"/>
 							</td>
 							<td>
-								<span th:text="${emp.age}"/>
+                                <span th:text="${emp.age}"/>
 							</td>
 							<td>
-								<span th:text="${#dates.format(emp.bir,'yyyy-MM-dd')}"/>
+                                <span th:text="${#dates.format(emp.bir,'yyyy-MM-dd')}"/>
 							</td>
 							<td>
-								<a th:href="@{/emp/delete(id=${emp.id})}">delete emp</a>&nbsp;|&nbsp;
-								<a th:href="@{/emp/find(id=${emp.id})}">update emp</a>
+                                <a th:href="@{/emp/delete(id=${emp.id})}">delete emp</a>&nbsp;|&nbsp;
+                                <a th:href="@{/emp/find(id=${emp.id})}">update emp</a>
 							</td>
 						</tr>
+
+						<!--<tr  th:class=${empStat.odd}?'row1':'row2' th:each="emp,empStat : ${emps}">-->
+							<!--<td>-->
+								<!--<span th:text="${emp.id}"/>-->
+							<!--</td>-->
+							<!--<td>-->
+								<!--<span th:text="${emp.name}"/>-->
+							<!--</td>-->
+							<!--<td>-->
+								<!--<span th:text="${emp.salary}"/>-->
+							<!--</td>-->
+							<!--<td>-->
+								<!--<span th:text="${emp.age}"/>-->
+							<!--</td>-->
+							<!--<td>-->
+								<!--<span th:text="${#dates.format(emp.bir,'yyyy-MM-dd')}"/>-->
+							<!--</td>-->
+							<!--<td>-->
+								<!--<a th:href="@{/emp/delete(id=${emp.id})}">delete emp</a>&nbsp;|&nbsp;-->
+								<!--<a th:href="@{/emp/find(id=${emp.id})}">update emp</a>-->
+							<!--</td>-->
+						<!--</tr>-->
 					</table>
 					<p>
 						<input type="button" class="button" value="Add Employee" onclick="location.href='/ems/toSave'">
