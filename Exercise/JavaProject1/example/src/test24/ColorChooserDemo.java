@@ -31,7 +31,6 @@ public class ColorChooserDemo extends JPanel implements ChangeListener {
         tcc.setBorder(BorderFactory.createTitledBorder("选择颜色"));
 
         add(bannerPanel, BorderLayout.CENTER);
-        add(tcc, BorderLayout.PAGE_END);
-        
+        add(tcc,BorderLayout.PAGE_END);
     }
 }

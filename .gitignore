@@ -1,6 +1,5 @@
 
 .DS_Store
-*.xml
 *.iml
 *.pbxproj
 *.plist
@@ -8,3 +7,9 @@
 *.swift
 *.xcworkspacedata
 *.xcuserstate
+*/.idea/*
+compiler.xml
+modules.xml
+workspace.xml
+misc.xml
+.idea
