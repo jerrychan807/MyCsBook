@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.UserFileDAO">
+
+    <!--根据用户id查询当前用户的文件信息-->
+    <select id="findByUserId" parameterType="Integer" resultType="UserFile">
+        select id,oldFileName,newFileName,ext,path,size,type,isImg,downcounts,uploadTime,userId
+        FROM t_files
+        where userId=#{id}
+    </select>
+
+
+    <insert id="save" parameterType="UserFile" useGeneratedKeys="true" keyProperty="id">
+        INSERT into t_files
+        VALUES (#{id},#{oldFileName},#{newFileName},#{ext},#{path},#{size},#{type},#{isImg},#{downcounts},#{uploadTime},#{userId})
+    </insert>
+</mapper>
