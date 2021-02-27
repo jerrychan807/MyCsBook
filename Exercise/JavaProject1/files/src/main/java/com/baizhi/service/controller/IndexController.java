@@ -20,4 +20,14 @@ public class IndexController {
     public String toPass01res() {
         return "pass01result";
     }
+
+    @GetMapping("pass02")
+    public String toPass02() {
+        return "pass02";
+    }
+
+    @GetMapping("pass02result")
+    public String toPass02res() {
+        return "pass02result";
+    }
 }

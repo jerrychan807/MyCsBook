@@ -54,7 +54,7 @@ public class Pass01Controller {
         // 处理文件上传
         aaa.transferTo(new File(dateDir, newFileName));
 
-        model.addAttribute("var1", "value1");
+        model.addAttribute("var1", "success");
 
         return "pass01result";
     }

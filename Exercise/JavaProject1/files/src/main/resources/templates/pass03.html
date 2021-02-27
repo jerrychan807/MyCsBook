@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>任务</title>
+</head>
+<body>
+
+<h1>欢迎</h1>
+<h3>Pass03</h3>
+<!--本pass禁止上传.asp|.aspx|.php|.jsp后缀文件！-->
+<h3>请选择要上传的图片：</h3>
+<form th:action="@{/pass03/upload}" method="post" enctype="multipart/form-data">
+    <input type="file" name="aaa">
+    <input type="submit" value="上传文件">
+</form>
+</body>
+</html>
