@@ -20,15 +20,20 @@ import java.util.Date;
 public class Pass06Controller {
 
     @PostMapping("upload")
-    public String upload(Model model, MultipartFile aaa, HttpServletRequest request) throws IOException {
+    public String upload(Model model, MultipartFile aaa) throws IOException {
 
         String[] denyExt = {".php", ".php5", ".php4", ".php3", ".php2", ".html", ".htm", ".phtml", ".pht", ".pHp", ".pHp5", ".pHp4", ".pHp3", ".pHp2", ".Html", ".Htm", ".pHtml", ".jsp", ".jspa", ".jspx", ".jsw", ".jsv", ".jspf", ".jtml", ".jSp", ".jSpx", ".jSpa", ".jSw", ".jSv", ".jSpf", ".jHtml", ".asp", ".aspx", ".asa", ".asax", ".ascx", ".ashx", ".asmx", ".cer", ".aSp", ".aSpx", ".aSa", ".aSax", ".aScx", ".aShx", ".aSmx", ".cEr", ".sWf", ".swf", ".htaccess", ".ini"};
 
         // 获取文件原始名称
         String oldFileName = aaa.getOriginalFilename();
+
+        // 删除文件名末尾的点
+        while ((oldFileName.substring(oldFileName.length() - 1)).equals(".")) {
+            oldFileName = oldFileName.substring(0, oldFileName.length() - 1);
+        }
+
         // 获取文件后缀
         String extension = "." + FilenameUtils.getExtension(oldFileName);
-        // TODO:删除文件名末尾的点
         extension = extension.replace("::$DATA", ""); //去除字符串::$DATA
         extension = extension.trim(); // 首尾去空
         System.out.println(extension);
@@ -47,11 +52,12 @@ public class Pass06Controller {
             // 处理文件上传
             aaa.transferTo(new File(dateDir, oldFileName));
 
-            model.addAttribute("var1", "success");
+            model.addAttribute("result", "success");
         } else {
-            model.addAttribute("var1", "fail");
+            model.addAttribute("result", "fail");
         }
 
-        return "pass06result";
+        model.addAttribute("title", "Pass06结果");
+        return "passresult";
     }
 }

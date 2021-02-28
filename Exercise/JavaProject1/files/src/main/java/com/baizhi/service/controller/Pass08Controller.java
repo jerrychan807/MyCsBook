@@ -26,9 +26,14 @@ public class Pass08Controller {
 
         // 获取文件原始名称
         String oldFileName = aaa.getOriginalFilename();
+
+        // 删除文件名末尾的点
+//        while ((oldFileName.substring(oldFileName.length() - 1)).equals(".")) {
+//            oldFileName = oldFileName.substring(0, oldFileName.length() - 1);
+//        }
+
         // 获取文件后缀
         String extension = "." + FilenameUtils.getExtension(oldFileName);
-        // TODO:删除文件名末尾的点
         extension = extension.replace("::$DATA", ""); //去除字符串::$DATA
         extension = extension.toLowerCase(); //转换为小写
         extension = extension.trim(); // 首尾去空
@@ -48,11 +53,13 @@ public class Pass08Controller {
             // 处理文件上传
             aaa.transferTo(new File(dateDir, oldFileName));
 
-            model.addAttribute("var1", "success");
+            model.addAttribute("result", "success");
         } else {
-            model.addAttribute("var1", "fail");
+            model.addAttribute("result", "fail");
         }
 
-        return "pass08result";
+        model.addAttribute("title", "Pass08结果");
+
+        return "passresult";
     }
 }

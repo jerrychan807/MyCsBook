@@ -67,11 +67,12 @@ public class Pass02Controller {
             // 处理文件上传
             aaa.transferTo(new File(dateDir, oldFileName));
 
-            model.addAttribute("var1", "success");
+            model.addAttribute("result", "success");
         } else {
-            model.addAttribute("var1", "fail");
+            model.addAttribute("result", "fail");
         }
 
-        return "pass02result";
+        model.addAttribute("title", "Pass02结果");
+        return "passresult";
     }
 }

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>任务</title>
+</head>
+<body>
+
+<h1>欢迎</h1>
+<h3>Pass09</h3>
+<!--'本pass禁止上传.php|.php5|.php4|.php3|.php2|php1|.html|.htm|.phtml|.pHp|.pHp5|.pHp4|.pHp3|.pHp2|pHp1|.Html|.Htm|.pHtml|.jsp|.jspa|.jspx|.jsw|.jsv|.jspf|.jtml|.jSp|.jSpx|.jSpa|.jSw|.jSv|.jSpf|.jHtml|.asp|.aspx|.asa|.asax|.ascx|.ashx|.asmx|.cer|.aSp|.aSpx|.aSa|.aSax|.aScx|.aShx|.aSmx|.cEr|.sWf|.swf|.htaccess后缀文件！'-->
+<h3>请选择要上传的图片：</h3>
+<form th:action="@{/pass09/upload}" method="post" enctype="multipart/form-data">
+    <input type="file" name="aaa">
+    <input type="submit" value="上传文件">
+</form>
+</body>
+</html>
