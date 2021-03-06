@@ -70,4 +70,24 @@ public class IndexController {
     public String toPass10() {
         return "pass10";
     }
+
+    @GetMapping("pass11")
+    public String toPass11() {
+        return "pass11";
+    }
+
+    @GetMapping("pass12")
+    public String toPass12() {
+        return "pass12";
+    }
+
+    @GetMapping("pass13")
+    public String toPass13() {
+        return "pass13";
+    }
+
+    @GetMapping("pass14")
+    public String toPass14() {
+        return "pass14";
+    }
 }

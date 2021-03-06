@@ -30,7 +30,6 @@ public class Pass11Controller {
         // 获取文件原始名称
         String oldFileName = aaa.getOriginalFilename();
 
-
         for (String ext : denyExt) { // 将含黑名单字符串置为空
             oldFileName = oldFileName.replace(ext, "");
         }
