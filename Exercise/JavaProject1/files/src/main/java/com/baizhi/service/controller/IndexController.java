@@ -90,4 +90,9 @@ public class IndexController {
     public String toPass14() {
         return "pass14";
     }
+
+    @GetMapping("pass18")
+    public String toPass18() {
+        return "pass18";
+    }
 }
